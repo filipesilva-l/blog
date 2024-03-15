@@ -1,7 +1,7 @@
 ---
 author: Filipe Silva
 title: IEnumerables traiçoeiros
-pubDatetime: 2024-03-17T15:00:00Z
+pubDatetime: 2024-03-13T15:00:00Z
 slug: ienumerables-traicoeiros
 featured: true
 draft: false
