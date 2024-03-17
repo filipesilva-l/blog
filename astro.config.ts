@@ -19,17 +19,18 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [
-      remarkToc,
+      [remarkToc, { heading: "Tabela de conteúdos" }],
       remarkReadingTime,
       [
         remarkCollapse,
         {
-          test: "Table of contents",
+          test: "Tabela de conteúdos",
+          summary: "Abrir tabela de conteúdo",
         },
       ],
     ],
     shikiConfig: {
-      theme: "one-dark-pro",
+      theme: "catppuccin-macchiato",
       wrap: true,
     },
   },
