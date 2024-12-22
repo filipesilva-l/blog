@@ -1,7 +1,7 @@
 ---
 author: Filipe Silva
 pubDatetime: 2024-12-21T22:02:25Z
-modDatetime:
+modDatetime: 2024-12-22T15:04:06Z
 title: O que importa em um code review
 slug: o-que-importa-code-review
 featured: true
@@ -34,13 +34,6 @@ isso que pretendo explorar neste post.
 
 ## Não é só sobre o código
 
-Uma estratégia comum para realizar revisões é varrer, de cima para baixo, as
-alterações enviadas em um _pull request_, observando as linhas vermelhas e
-verdes que se entrelaçam e formam o novo código. Durante essa leitura, o
-avaliador concentra sua atenção na forma como o código foi escrito, analisando
-como variáveis e funções foram definidas. Geralmente, o objetivo é ler o código
-apresentado e avaliá-lo de forma crítica.
-
 Antes mesmo de começar a escrever o código que está sendo avaliado, o autor
 tinha uma intenção clara: resolver algo, seja um bug, uma nova feature ou até
 mesmo realizar um refactor. Um ponto importante, e muitas vezes negligenciado
@@ -48,6 +41,13 @@ pelos avaliadores, é não se limitar a avaliar apenas a forma como o código fo
 escrito, mas também como ele se relaciona com a intenção original por trás do
 trabalho. Isso pode parecer óbvio, mas são incontáveis as vezes em que
 presenciei esse cenário se repetir.
+
+Pois, uma estratégia comum para realizar revisões é varrer, de cima para baixo, as
+alterações enviadas em um _pull request_, observando as linhas vermelhas e
+verdes que se entrelaçam e formam o novo código. Durante essa leitura, o
+avaliador concentra sua atenção na forma como o código foi escrito, analisando
+como variáveis e funções foram definidas. Geralmente, o objetivo é ler o código
+apresentado e avaliá-lo de forma crítica.
 
 Uma prática que eu adoto para code reviews é seguir a seguinte hierarquia para
 se avaliar um PR (pull request):
@@ -133,12 +133,11 @@ embora seja o item menos importante, é também o tipo de comentário mais
 presente nos code reviews.
 
 Também é necessário tomar cuidado em deixar o processo de code review saturado
-para quem está sendo avaliado. Uma prática pessoal é de fazer esses _nitpicks_
-nos comentários do PR apenas quando não houveram muitos dos outros tipos de
-comentários anteriores. Isso é importante para (1) deixar o foco dos
-comentários nos pontos mais importantes, (2) não saturar o autor do PR com
-comentários superficiais e (3) não prender o PR em code review mais que o
-necessário.
+para o autor. Uma prática pessoal é de fazer esses _nitpicks_ nos comentários
+do PR apenas quando não houveram muitos dos outros tipos de comentários
+anteriores. Isso é importante para (1) deixar o foco dos comentários nos pontos
+mais importantes, (2) não saturar o autor do PR com comentários superficiais e
+(3) não prender o PR em code review mais que o necessário.
 
 Recomendo a leitura desse
 [post](https://blog.danlew.net/2021/02/23/stop-nitpicking-in-code-reviews/).
