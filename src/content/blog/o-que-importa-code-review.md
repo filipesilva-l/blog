@@ -1,7 +1,7 @@
 ---
 author: Filipe Silva
 pubDatetime: 2024-12-21T22:02:25Z
-modDatetime: 2024-12-22T15:04:06Z
+modDatetime: 2024-12-22T15:08:44Z
 title: O que importa em um code review
 slug: o-que-importa-code-review
 featured: true
@@ -91,16 +91,15 @@ sobre a abordagem escolhida para resolver o problema inicial.
 
 ## A arquitetura do código
 
+Após avaliar como o problema foi resolvido e se a solução é realmente adequada,
+a arquitetura é o segundo ponto mais importante devido ao custo de sua
+correção, que é o esforço necessário para ajustar uma arquitetura não ideal.
+
 Este é um ponto mais delicado, pois, dependendo do escopo das alterações, a
 arquitetura pode significar coisas distintas. No caso de estruturar um novo
 micro-serviço, pode envolver a forma como os outros serviços existentes vão se
 relacionar com esse serviço. No caso de uma nova feature, pode significar a
 maneira como as novas classes ou métodos foram estruturados.
-
-Após avaliar como o problema foi resolvido e se a solução é realmente adequada,
-a arquitetura é o segundo ponto mais importante devido ao custo de sua
-correção. O custo de correção é o esforço necessário para ajustar uma
-arquitetura não ideal.
 
 Como membro do time e corresponsável pela saúde da _codebase_ e pelas entregas,
 seu papel ao avaliar a arquitetura é pensar criticamente se há uma solução
@@ -132,12 +131,12 @@ facilmente corrigido em um _commit_ posterior. Isso é interessante, pois,
 embora seja o item menos importante, é também o tipo de comentário mais
 presente nos code reviews.
 
-Também é necessário tomar cuidado em deixar o processo de code review saturado
-para o autor. Uma prática pessoal é de fazer esses _nitpicks_ nos comentários
-do PR apenas quando não houveram muitos dos outros tipos de comentários
-anteriores. Isso é importante para (1) deixar o foco dos comentários nos pontos
-mais importantes, (2) não saturar o autor do PR com comentários superficiais e
-(3) não prender o PR em code review mais que o necessário.
+É importante evitar que o processo de code review se torne cansativo para o
+autor do PR. Uma prática pessoal que adoto é fazer comentários do tipo nitpick
+apenas quando os outros tipos de observações mais relevantes já foram
+abordados. Isso ajuda a (1) manter o foco nos aspectos mais importantes, (2)
+evitar sobrecarregar o autor com sugestões superficiais e (3) não prolongar
+desnecessariamente o ciclo de revisão.
 
 Recomendo a leitura desse
 [post](https://blog.danlew.net/2021/02/23/stop-nitpicking-in-code-reviews/).
